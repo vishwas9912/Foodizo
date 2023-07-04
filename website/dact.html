@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<style>
+     
+    input[type=text],
+    input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+    .a {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 50%;
+    }
+
+     
+    .container {
+        padding: 16px;
+        width: 50%;
+    }
+    
+     
+    span.psw {
+        float: right;
+        padding-top: 16px;
+    }
+     
+    @media screen and (max-width: 100px) {
+        span.psw {
+            display: block;
+            float: none;
+        }
+    }
+</style>
+ 
+<body>
+ 
+    <h2>Deactivate Form</h2>
+    <!--Step 1 : Adding HTML-->
+    <form action="delete.jsp">
+ 
+        <div class="container">
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+ 
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="pass" required>
+ 
+            <input type="submit" value="Deactivate" class="a"/>
+        </div>
+    </form>
+ 
+</body>
+ 
+</html>
